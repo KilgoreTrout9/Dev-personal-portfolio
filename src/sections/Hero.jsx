@@ -9,7 +9,6 @@ const skills = [
   "Next.js",
   "TypeScript",
   "Node.js",
-  "GraphQL",
   "PostgreSQL",
   "MongoDB",
   "Docker",
@@ -19,6 +18,15 @@ const skills = [
   "Cypress",
   "Figma",
   "Git",
+  "Refine",
+  "Code Rabbit",
+];
+
+const backgroundImages = [
+  "/hero-background1.png",
+  "/nasa-background.png",
+  "/usgs-background.png",
+  "/sparkle-background.png"
 ];
 
 export const Hero = () => {
@@ -27,7 +35,7 @@ export const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img 
-          src="/hero-background1.png"
+          src={backgroundImages[Math.floor(Math.random() * backgroundImages.length)]}
           alt="Background"
           className="w-full h-full object-cover opacity-40"
         />
@@ -131,7 +139,7 @@ export const Hero = () => {
                   {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-float" />
                     <span className="text-sm font-medium">
                       Available for work
                     </span>
@@ -140,7 +148,7 @@ export const Hero = () => {
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                   <div className="text-2xl font-bold text-primary">5+</div>
-                  <div className="text-xs text-muted-foreground">
+                  <div className="text-xs text-primary/">
                     Years Exp.
                   </div>
                 </div>
