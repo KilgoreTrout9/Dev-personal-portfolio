@@ -9,7 +9,7 @@ const experiences = [
     current: true,
   },
   {
-    period: "May 2022 - Jan 2023",
+    period: "May 2022 - Nov 2022",
     role: "Full-Stack Engineer",
     company: "Draper",
     description:
@@ -18,7 +18,7 @@ const experiences = [
     current: false,
   },
   {
-    period: "June 2021 — April 2022",
+    period: "June 2021 — May 2022",
     role: "Frontend Developer",
     company: "Brillio",
     description:
