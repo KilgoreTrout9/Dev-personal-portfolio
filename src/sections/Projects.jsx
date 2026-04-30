@@ -131,7 +131,9 @@ export const Projects = () => {
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <AnimatedBorderButton>
-            View All Projects
+            <a href='https://github.com/KilgoreTrout9?tab=repositories'>
+              View All Projects
+            </a>
             <ArrowUpRight className="w-5 h-5" />
           </AnimatedBorderButton>
         </div>
