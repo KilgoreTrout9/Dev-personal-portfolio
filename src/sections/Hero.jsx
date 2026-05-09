@@ -85,8 +85,8 @@ export const Hero = () => {
                 <span className="text-white font-serif italic font-normal">precision.</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-400">
-                You have found me, Pete Cowles.  Your search for a skilled software engineer ends here.  
-                With a passion for crafting elegant solutions and a knack for turning complex problems 
+                You have found me, Pete Cowles.  Your search for a skilled problem solver ends here.  
+                With a passion for crafting elegant solutions and a knack for turning complex issues 
                 into seamless user experiences, I am ready to bring your digital visions to life.  
                 Let's build something amazing together.
               </p>
@@ -94,13 +94,15 @@ export const Hero = () => {
 
             {/* Call to Action Buttons */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <Button size="lg" anchor="#contacts">
                 Contact Me <ArrowRight  className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="/PeteCowlesResume.pdf" download="Pete Cowles Resume.pdf">  
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
@@ -135,14 +137,14 @@ export const Hero = () => {
                 />
                 <div className="relative glass rounded-3xl p-2 glow-border">
                   <img 
-                    src="/petebull.png"
+                    src="/pete-in-suit.jpg"
                     alt="Hero Image"
                     className="w-full aspect-[4/5] object-cover rounded-2xl"
                   />
                   {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-float" />
+                    <div className="w-3 h-3 bg-green-500 rounded-full" />
                     <span className="text-sm font-medium">
                       Available for work
                     </span>
