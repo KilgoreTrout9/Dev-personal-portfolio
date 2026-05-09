@@ -64,7 +64,7 @@ export const About = () => {
               <p>
                 When I'm not coding, you'll find me exploring new technologies,
                 contributing to open-source projects, or working in various 
-                aerospace-related side projects. Obviously, very interested 
+                aerospace-related side projects. Obviously, I'm very interested 
                 in the intersection of software and aerospace, and how technology 
                 can push the boundaries of what's possible in both fields.
               </p>
@@ -79,7 +79,7 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
+          {/* Right Column - Highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div

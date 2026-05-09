@@ -16,7 +16,7 @@ const projects = [
     description:
       "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
     image: "/projects/catwalk-example.png",
-    tags: ["JavaScript", "Axios", "MySQL"],
+    tags: ["JavaScript", "Axios", "PostgreSQL"],
     github: "https://github.com/Agile-Ankylosaurus/Project-Catwalk",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     description:
       "A fullstack application for reviewing and rating movies.",
     image: "/projects/review-IT.png",
-    tags: ["React", "PostgreSQL", "FastAPI"],
+    tags: ["React", "MySQL", "FastAPI"],
     github: "https://github.com/KilgoreTrout9/MVP-Movie_Rater",
   },
   {
@@ -130,12 +130,12 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            <a href='https://github.com/KilgoreTrout9?tab=repositories'>
+          <a href='https://github.com/KilgoreTrout9?tab=repositories'>
+            <AnimatedBorderButton>
               View All Projects
-            </a>
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>
